@@ -19,6 +19,7 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="README" />
+    <None Include="COPYING.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\stdafx.h">

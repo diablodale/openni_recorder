@@ -1,12 +1,26 @@
-/*
+/****************************************************************************
+	OpenNI_Recorder
+	Copyright (C) 2011 Dale Phurrough
 
-Recorder.cpp : Defines the entry point for the console application.
+	This file is part of OpenNI_Recorder.
 
-*/
+    OpenNI_Recorder is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    OpenNI_Recorder is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with OpenNI_Recorder.  If not, see <http://www.gnu.org/licenses/>.
+****************************************************************************/
 
 #include "stdafx.h"
 #define XMLCONFIG_FILENAME "./recorder_config.xml"
-#define RECORDER_VERSION "v1.0.0"
+#define RECORDER_VERSION "v1.0.1"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -28,7 +42,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	switch(argc)
 	{
 		case 1:
-			printf("OpenNI Recorder %s by Dale Phurrough\nUsage: record.exe secondsToRecord [xmlconfigfilename]\n", RECORDER_VERSION);
+			printf("OpenNI Recorder %s, Copyright (c) 2011 Dale Phurrough\nThis program comes with ABSOLUTELY NO WARRANTY.\n", RECORDER_VERSION);
+			printf("Licensed under the GNU General Public License v3.0 (GPLv3) available at http://www.gnu.org/licenses/gpl-3.0.html\n");
+			printf("\nUsage: record.exe secondsToRecord [xmlconfigfilename]\n");
 			exit(0);
 		case 2:
 			// printf("Reading from default config filë\n");
